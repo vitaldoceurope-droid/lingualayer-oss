@@ -1,0 +1,35 @@
+/vendor/
+/node_modules/
+.env
+.env.backup
+.env.production
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+*.log
+/storage/logs/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+!/storage/logs/.gitkeep
+/tests/coverage/
+.phpunit.result.cache
+/dist/e2e/node_modules/
+/dist/e2e/results/
+/dist/e2e/test-results/
+/dist/*.html
+/dist/e2e/*.html
+/dist/*.pdf
+# Hostalia Gateway deploy bundle contains live DB credentials hardcoded into
+# helper scripts (used during the 28/04 migration). Don't push to a public/
+# private repo — regenerate from the project files if needed.
+# (The publishable landing artifacts live separately under dist/landing/.)
+/dist/hostalia-gateway/
+/public/vendor/
+/public/build/
+*.tar.gz
+*.zip
+.claude/settings.local.json
